@@ -2,12 +2,22 @@
   "builds": {
     "android": {
       "release": {
-        "workflow": "generic"
+        "workflow": "generic",
+        "gradleCommand": ":app:bundleRelease"
+      },
+      "debug": {
+        "workflow": "generic",
+        "gradleCommand": ":app:bundleDebug"
       }
     },
     "ios": {
       "release": {
-        "workflow": "generic"
+        "workflow": "generic",
+        "scheme": "Project - Release"
+      },
+      "debug": {
+        "workflow": "generic",
+        "scheme": "Project - Dev Client"
       }
     }
   }
